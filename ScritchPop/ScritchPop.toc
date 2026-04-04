@@ -1,0 +1,18 @@
+## Interface: 120000, 120001, 120005
+## Title: ScritchPop Combo Points
+## Author: Drufearr
+## Category: Drufearr
+## SavedVariables: ScritchPopConfig
+## IconTexture: Interface\AddOns\ScritchPop\pops\scritchPop\closePurple.tga
+
+
+# Libs
+Libs\LibStub\LibStub.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
+Libs\AceDB-3.0\AceDB-3.0.lua
+Libs\AceGUI-3.0\AceGUI-3.0.xml
+Libs\AceConfig-3.0\AceConfig-3.0.xml
+
+
+# Core
+ScritchPop.xml
