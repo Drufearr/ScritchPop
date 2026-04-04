@@ -1,7 +1,7 @@
 ﻿local _, ns = ...
 if not ns.ScritchPop then ns.ScritchPop = {} end
 
-ns.ScritchPop.ComboPoints = CreateFrame("Frame", "ScritchPopComboPoints")
+ns.ScritchPop.ComboPoints = CreateFrame("Frame", "ScritchPopComboPoints", UIParent)
 
 function ns.ScritchPop.ComboPoints:UpdateDisplay()
     if not self.initialized then return end
@@ -72,7 +72,6 @@ function ns.ScritchPop.ComboPoints:Init()
     self.PointsTextures = {}
     self.PointSize = 64 * ns.spdb.combo_points.scale
     self.Frame = CreateFrame("Frame", 'ScritchPopComboPointsFrame', UIParent, BackdropTemplateMixin and "BackdropTemplate")
-    self.Frame:SetFrameLevel(200)
     self.Frame:Show()
     self:ApplyLayout()
     
